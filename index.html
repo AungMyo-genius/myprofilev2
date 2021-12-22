@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aung Myo</title>
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+
+    <!-- Bootstarp css1 js2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- fontawesome css1  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css1 -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+    
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="change">
+        <div class="container">
+            <a href="" class="navbar-brand">
+                <img src="img/brandlight.png" alt="" class="" id="brand-img">
+                <span class="text-uppercase text-light ms-2">Aung</span>
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                <i class="navbar-toggler-icon"></i>
+            </button>
+
+            
+
+            <div id="nav" class="navbar-collapse collapse">
+                <div class="ms-md-2 my-1 form-check form-switch lightordarks">
+                    <i class="fas fa-sun text-light"></i>
+                    <input type="checkbox" class="form-check-input">
+                </div>
+                <ul class="navbar-nav ms-auto">
+                    <li class="navbar-item"><a href="#home" 
+                    class="nav-link text-light py-2">Home</a></li>
+                    <li class="navbar-item"><a href="#about" class="nav-link text-light py-2">About</a></li>
+                    <li class="navbar-item dropdown">
+                        <a href="#" class="nav-link text-light py-2 dropdown-toggle" data-bs-toggle="dropdown">Portfolio</a>
+                        
+                        <div class="dropdown-menu">
+                            <a href="#portfolio" class="dropdown-item">My Skills</a>
+                            <a href="#mywork" class="dropdown-item">My Works</a>
+                        </div>
+                    </li>
+                    <li class="navbar-item"><a href="#contact" class="nav-link text-light py-2">Contact</a></li>
+                </ul>
+            </div>
+
+            
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- START HOME BANNER -->
+    <section class="bg-light" id="home">
+        <div class="container banners">
+            <div class="boxs">
+                <div class="p-1 mt-3">
+                    <img src="img/profile1.png" class="rounded-circle profiles" alt="">
+                    <img src="img/undraw_software_engineer_re_fyew.svg" alt="" class="d-none d-lg-block banner-svgs">
+                    <p class="display-5 text-dark profiletexts">I am Aung Myo, Frontend Developer. I want to be a Full-stack Developer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END HOME BANNER -->
+
+    <!-- Start About Page -->
+    <section class="bg-light py-3" id="about">
+        <div class="container">
+            
+            <div class="row">
+                <p class="display-5 text-center text-dark mb-2">About Me</p>
+                <div class="col-10 col-lg-8 mx-auto">
+                    <img src="img/undraw_certificate_re_yadi.svg" class="d-none d-lg-block about-svgs" alt="">
+                    <div class="carousel slide bg-dark text-light" data-bs-ride="carousel" id="aboutme">
+                        <div class="carousel-indicators">
+                            <span data-bs-target="#aboutme" class="active"  data-bs-slide-to="0"></span>
+                            <span data-bs-target="#aboutme"  data-bs-slide-to="1"></span>
+                            <span data-bs-target="#aboutme"  data-bs-slide-to="2"></span>
+                            <span data-bs-target="#aboutme"  data-bs-slide-to="3"></span>
+                        </div>
+                        <div class="mb-3 indicatorbtns">
+                            <button class="btn btn-secondary mx-1" data-bs-target="#aboutme" data-bs-slide-to="0"><i class="far fa-address-card fa-2x"></i></button>
+                            <button class="btn btn-secondary mx-1" data-bs-target="#aboutme" data-bs-slide-to="1"><i class="fas fa-user-graduate fa-2x"></i></button>
+                            <button class="btn btn-secondary mx-1" data-bs-target="#aboutme" data-bs-slide-to="2"><i class="fas fa-code fa-2x"></i></button>
+                            <button class="btn btn-secondary mx-1" data-bs-target="#aboutme" data-bs-slide-to="3"><i class="fas fa-heartbeat fa-2x"></i></button>
+                        </div>
+                        <div class="carousel-inner pb-4 text-center">
+                            
+                            <div class="carousel-item active">
+                                <div class="mx-auto imgs" style="background-image: url(img/mandalay.jpg);"></div>
+                                <p class="display-6 mt-3">I am <span id="age"></span> years old and live in Mandalay. Have you been Mandalay?</p>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="mx-auto imgs" style="background-image: url(img/stu.jpg);"></div>
+                                <p class="display-6 mt-3">I graduated from Sagaing Technological University in 2019.</p>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="mx-auto imgs" style="background-image: url(img/code.jpg);"></div>
+                                <p class="display-6 mt-3">Although I am an electrical engineer, I want to be a programmer.</p>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="mx-auto imgs" style="background-image: url(img/life.jpg);"></div>
+                                <p class="display-6 mt-3">I love to code while listening to music.
+                                    I love to travel with my friends.</p>
+                            </div>
+        
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End About Page -->
+
+    <!-- Start Portfolio Section -->
+    <section class="py-4 bg-light text-dark">
+        <div class="container">
+            <div class="row">
+                <p class="display-5 text-center mt-5 mb-3">My Skills</p>
+                <div class="col-12 mx-auto d-flex justify-content-center flex-wrap text-center" id="portfolio">
+                    <img src="img/undraw_maker_launch_re_rq81.svg" class="d-none d-lg-block p-3 rounded portfolio-svgs" alt="">
+                    <a class="p-5 mx-2 bg-dark text-light rounded-circle skills" points="80" href="#skill">
+                        <p class="display-4">HTML</p>
+                        <i class="fab fa-html5 fa-5x" style="color:#FF5733"></i>
+                    </a>
+                    <a class="p-5 m-2 bg-dark text-light rounded-circle skills" points="75"  href="#skill">
+                        <p class="display-4">CSS</p>
+                        <i class="fab fa-css3 fa-5x" style="color:#2965f1"></i>
+                    </a>
+                    <a class="p-5 m-2 bg-dark text-light rounded-circle skills" points="55"  href="#skill">
+                        <p class="display-4">BS</p>
+                        <i class="fab fa-bootstrap fa-5x" style="color:#7d54b9"></i>
+                    </a>
+                    <a class="p-5 m-2 bg-dark text-light rounded-circle skills" points="65"  href="#skill">
+                        <p class="display-4">JS</p>
+                        <i class="fab fa-js-square fa-5x" style="color:#F0DB4F"></i>
+                    </a>
+                    <a class="p-5 m-2 bg-dark text-light rounded-circle skills" points="20"  href="#skill">
+                        <p class="display-4">Vue</p>
+                        <i class="fab fa-vuejs fa-5x" style="color:#41B883"></i>
+                    </a>
+                    <a class="p-5 m-2 bg-dark text-light rounded-circle skills" points="20"  href="#skill" id="skill">
+                        <p class="display-4">Php</p>
+                        <i class="fab fa-php fa-5x" style="color:#6d72d8"></i>
+                    </a>
+                    <a class="p-5 m-2 bg-dark text-light rounded-circle skills" points="40"  href="#skill">
+                        <p class="display-4">Mysql</p>
+                        <i class="fas fa-database fa-5x" style="color:#00758F"></i>
+                    </a>
+                </div>
+
+                <div class="col-8 mx-auto mb-5 mt-4 skill-progress">
+                    <div class="d-block text-center">
+                        <i class="fas fa-arrow-up fa-4x"></i>
+                        <span class="display-6">Press them!</span>
+                    </div>
+                    <div class="progress my-2 d-none bg-light" style="height: 15px;">
+                        <div
+                              class="progress-bar"
+                              style="width: 50%"
+                              aria-valuenow="50"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                        >10%</div>
+                    </div>
+                </div>
+
+                <p class="display-5 text-center mb-3 mt-5">My Works</p>
+                <div class="col-12 d-flex justify-content-center flex-wrap text-center" id="mywork">
+
+                    <div class="card m-1 skillcards" style="width: 30rem;">
+                        <img class="card-img-top" src="img/work-1.png" alt="HTML + CSS">
+                        <div class="card-body bg-dark">
+                          <p class="card-text">
+                            <i class="fab fa-html5 fa-3x" style="color:#FF5733"></i>
+                            <i class="fab fa-css3 fa-3x" style="color:#2965f1"></i>
+                            <i class="fab fa-bootstrap fa-3x" style="color:#7d54b9"></i>
+                          </p>
+                          <div class="bg-dark text-light card-btns">
+                            <a href="https://aungmyo-genius.github.io/myprofile/"  target="_blank" class="btn btn-outline-light btn-lg rounded-pill">Live Demo</a>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="card m-1 skillcards" style="width: 30rem;">
+                        <img class="card-img-top" src="img/bswork1.png" alt="HTML + CSS + BS">
+                        <div class="card-body bg-dark">
+                          <p class="card-text">
+                            <i class="fab fa-html5 fa-3x" style="color:#FF5733"></i>
+                            <i class="fab fa-css3 fa-3x" style="color:#2965f1"></i>
+                            <i class="fab fa-bootstrap fa-3x" style="color:#7d54b9"></i>
+                          </p>
+                        </div>
+                        <div class="bg-dark text-light card-btns">
+                            <a href="https://aungmyo-genius.github.io/myprofile/"  target="_blank" class="btn btn-outline-light btn-lg rounded-pill">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="card m-1 skillcards" style="width: 30rem;">
+                        <img class="card-img-top" src="img/bswork2.png" alt="HTML + CSS">
+                        <div class="card-body bg-dark">
+                          <p class="card-text">
+                            <i class="fab fa-html5 fa-3x" style="color:#FF5733"></i>
+                            <i class="fab fa-css3 fa-3x" style="color:#2965f1"></i>
+                            <i class="fab fa-bootstrap fa-3x" style="color:#7d54b9"></i>
+                          </p>
+                        </div>
+                        <div class="bg-dark text-light card-btns">
+                            <a href="https://aungmyo-genius.github.io/myprofile/"  target="_blank" class="btn btn-outline-light btn-lg rounded-pill">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="card m-1 skillcards" style="width: 30rem;">
+                        <img class="card-img-top" src="img/work1.png" alt="HTML + CSS + BS">
+                        <div class="card-body bg-dark">
+                          <p class="card-text">
+                            <i class="fab fa-html5 fa-3x" style="color:#FF5733"></i>
+                            <i class="fab fa-css3 fa-3x" style="color:#2965f1"></i>
+                            <i class="fab fa-js-square fa-3x" style="color:#F0DB4F"></i>
+                          </p>
+                        </div>
+                        <div class="bg-dark text-light card-btns">
+                            <a href="https://aungmyo-genius.github.io/myprofile/"  target="_blank" class="btn btn-outline-light btn-lg rounded-pill">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="card m-1 skillcards" style="width: 30rem;">
+                        <img class="card-img-top" src="img/work2.png" alt="HTML + CSS + BS">
+                        <div class="card-body bg-dark">
+                          <p class="card-text">
+                            <i class="fab fa-html5 fa-3x" style="color:#FF5733"></i>
+                            <i class="fab fa-css3 fa-3x" style="color:#2965f1"></i>
+                            <i class="fab fa-js-square fa-3x" style="color:#F0DB4F"></i>
+                          </p>
+                        </div>
+                        <div class="bg-dark text-light card-btns">
+                            <a href="https://aungmyo-genius.github.io/myprofile/"  target="_blank" class="btn btn-outline-light btn-lg rounded-pill">Live Demo</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio Section -->
+    
+    <!-- Start Contact Section -->
+    <section id="contact" class="bg-light text-dark py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8 mx-auto text-center">
+                    <p class="display-5 text-center mb-5">Contact Me</p>
+                    <img src="img/undraw_social_girl_re_kdrx.svg" class="d-none d-lg-block contact-1svgs" alt="">
+                    <img src="img/undraw_contact_us_re_4qqt.svg" class="d-none d-lg-block contact-2svgs" alt="">
+                    <a href="mailto:aungmyo2123@gmail.com" class="d-block text-center text-dark mb-3">
+                        <i class="fas fa-envelope fa-2x me-2"></i>
+                        <span class="display-6">aungmyo2123@gmail.com</span>
+                    </a>
+
+                    <a href="tel:+959967922680" class="d-block text-center text-dark mb-2">
+                        <i class="fas fa-phone fa-2x me-2"></i>
+                        <span class="display-6">+959,967,922,680</span>
+                    </a>
+
+                    <a href="https://www.facebook.com/aungmyoactulizer" class="d-block text-center text-dark mb-3">
+                        <i class="fab fa-facebook-square fa-3x me-2"></i>
+                        <span class="display-6 fblinks">https://www.facebook.com/aungmyoactulizer</span>
+                    </a>
+
+                    <a href="https://drive.google.com/file/d/1irZv1jALNtzl4MD35m3-WWOaruMvopCN/view?usp=sharing" class="d-block text-center text-dark mb-3">
+                        <i class="fas fa-file fa-3x me-2"></i>
+                        <span class="display-6 fblinks">Click to download my resume.</span>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- bootstrap css1 js2 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- jquery js1 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- custom js1 -->
+    <script src="js/app.js"></script>
+</body>
+</html>
