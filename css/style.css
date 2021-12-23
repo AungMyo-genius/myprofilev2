@@ -171,6 +171,9 @@
     outline: 0;
     border: 0;
     transition: all 0.7s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 
 .skills:hover{
@@ -184,7 +187,59 @@
 }
 
 .skills:active{
-    transform: scale(0.9);
+    transform: translateY(10px);
+}
+
+.skillscores{
+    width: 220px;
+    height: 70%;
+
+    position: absolute;
+    bottom:0;
+    left:0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateY(200%);
+
+    transition: all 0.7s;
+}
+
+.skills:active .skillscores{
+    transform: scale(1);
+}
+
+.active.skillscores{
+    transform: translateY(0%);
+}
+
+.skillscores::before{
+    content: "";
+    width: inherit;
+    height: 10px;
+    background-color: inherit;
+
+    position: absolute;
+    top:-10px;
+    left:0;
+
+    animation: skillscoreani 1s ease-in-out infinite;
+}
+
+@keyframes skillscoreani {
+    0%{
+        clip-path: polygon(0% 40%, 13% 32%, 32% 30%, 44% 37%, 58% 43%, 72% 47%, 87% 46%, 100% 38%, 100% 100%, 0% 100%);
+      }
+
+      50%{
+        clip-path: polygon(0% 40%, 13% 48%, 28% 54%, 44% 54%, 60% 46%, 73% 39%, 88% 36%, 100% 38%, 100% 100%, 0% 100%);
+      }
+
+      100%{
+        clip-path: polygon(0% 40%, 13% 32%, 32% 30%, 44% 37%, 58% 43%, 72% 47%, 87% 46%, 100% 38%, 100% 100%, 0% 100%);
+      }
 }
 
 .progress-bar{

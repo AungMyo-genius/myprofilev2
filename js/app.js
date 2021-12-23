@@ -83,23 +83,23 @@ function changeindicator(){
 // End About section
 
 // Start Portfolio Section
-const progressText = document.querySelector(".skill-progress .d-block");
-const progress = document.querySelector(".skill-progress .d-none");
 const skillbtns = document.querySelectorAll("#portfolio a");
-const progress_bar = document.querySelector(".progress-bar");
 const card_btns = document.querySelectorAll(".skillcards a");
+const skillscores = document.querySelectorAll(".skillscores");
 
+function removeactive() {
+    skillscores.forEach( skill => skill.classList.remove("active"));
+}
 
 skillbtns.forEach( btn => {
     btn.addEventListener("click", ()=>{
-        progressText.classList.replace("d-block", "d-none");
-        progress.classList.replace("d-none", "d-block");
-        const skill = btn.getAttribute("points");
-        const colors = btn.lastElementChild.style.color;
-        progress_bar.style.backgroundColor = colors;
-        progress_bar.style.width = `${skill}%`;
-        progress_bar.innerText = `${skill}%`;
+        btn.children[2].classList.add("active");
+        const point = btn.getAttribute("points");
+        btn.children[2].style.height = `${point}%`;
+        btn.children[2].innerHTML = `<span class="display-6">${point}%</span>`;
     })
+    
+    btn.addEventListener("mouseleave", removeactive);
 })
 
 function changecardbtn() {
