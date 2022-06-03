@@ -218,6 +218,7 @@
 .skillscores::before{
     content: "";
     width: inherit;
+    height: inherit;
     height: 10px;
     background-color: inherit;
 
@@ -273,7 +274,7 @@
 }
 
 .skillcards:hover img{
-    transform: scale(1.8);
+    transform: scale(1.9);
 }
 
 .skillcards .card-btns{
@@ -300,6 +301,10 @@
 
 .card-btns.bg-light{
     background-color: #efefef9f !important;
+}
+
+.card-text{
+    margin: 0;
 }
 
 /* End Portfolio Section */
