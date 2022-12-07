@@ -365,4 +365,12 @@
     font-weight: 200;
     line-height: 1;
 }
+
+@media (max-width:600px) {
+    .display-6.fblinks{
+        font-size: 1rem;
+        font-weight: 100;
+        line-height: 1;
+    }
+}
 /* End Contact Section */
