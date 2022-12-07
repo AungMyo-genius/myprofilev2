@@ -82,8 +82,27 @@
     border-radius: 5px !important;
 }
 
+.profiletexts{
+    font-size:30px; 
+    margin: 10px 50px; 
+    letter-spacing: 6px; 
+    font-weight: bold;
+    font-family: 'Waiting for the Sunrise';
+}
 
 @media (max-width:600px) {
+    #brand-img{
+        width: 50px;
+    }
+    .sp{
+        display: none;
+    }
+    .banners{
+        height: auto;
+    }
+    #home{
+        margin-top: 80px;
+    }
     .profiles{
         width: 150px;
         height: 150px;
@@ -98,27 +117,11 @@
     }
 
     .profiletexts{
-        font-size: 30px;
+        font-size: 20px;
     }
-    .navbar .container{
-        padding-right:55px;
-    }
+
 }
 
-.profiletexts{
-    animation: profiletextani 0.8s linear forwards;
-}
-
-@keyframes profiletextani {
-    from{
-        filter: blur(20px);
-        transform: translate(-50px , 50px);
-    }
-    to{
-        filter:blur(0px);
-        transform: translate(0px , 0px);
-    }
-}
 /* END HOME BANNER */
 
 /* Start About  */
@@ -147,6 +150,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+    #about .mx-auto{
+        width: 100%;
+    }
     #about imgs{
         width: 300px;
         height: 250px;
@@ -180,10 +186,10 @@
 }
 
 #portfolio .portfolio-svgs{
-    width: 190px;
+    width: 200px;
     position: absolute;
-    bottom:100px;
-    left:-10px;
+    bottom:90px;
+    left:0;
 }
 
 .skills{
