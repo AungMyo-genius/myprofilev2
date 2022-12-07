@@ -100,6 +100,9 @@
     .profiletexts{
         font-size: 30px;
     }
+    .navbar .container{
+        padding-right:55px;
+    }
 }
 
 .profiletexts{
