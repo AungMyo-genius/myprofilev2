@@ -305,8 +305,8 @@
 }
 
 .skillcards .card-btns{
-    width: 478px;
-    height: 330px;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
